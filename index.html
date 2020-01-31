@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="index.html"><img src="img/logo.png" alt="Device E-Shop logo width=" 163" height="35"></a>
+      <a href="index.html"><img src="img/logo.png" alt="Device E-Shop logo" width="163" height="35"></a>
       <ul>
         <li><input type="text"></li>
         <li><a href="login.html">Войти</a></li>
-        <li><button type="button">Сравнить</button></li>
-        <li><button type="button">Корзина</button></li>
+        <li><a href="compare.html">Сравнить</a></li>
+        <li><a href="cart.html">Корзина</a></li>
       </ul>
       <ul>
         <li><a href="inner.html">Каталог товаров</a></li>
@@ -22,44 +23,26 @@
         <li><a href="guarantee.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      <section>
-        <ul>
-          <li>
-            Виртуальная реальность
-          </li>
-          <li>
-            Моноподы для селфи
-          </li>
-          <li>
-            Экшн-камеры
-          </li>
-          <li>
-            Фитнес-браслеты
-          </li>
-          <li>
-            Умные часы
-          </li>
-          <li>
-            Квадрокоптеры
-          </li>
-        </ul>
-      </section>
+      <ul>
+        <li>Виртуальная реальность</li>
+        <li>Моноподы для селфи</li>
+        <li>Экшн-камеры</li>
+        <li>Фитнес-браслеты</li>
+        <li>Умные часы</li>
+        <li>Квадрокоптеры</li>
+      </ul>
     </nav>
   </header>
   <main>
-    <h1>Интернет-магазин Девайс</h1>
+    <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
     <section>
       <ul>
         <li>
-          <h3>
-            Делай селфи,
-            как Бен Стиллер!
-          </h3>
+          <h3>Делай селфи, как Бен Стиллер!</h3>
           <span>01</span>
           <img src="img/longest-selfie-stick.png" alt="longest selfie stick" width="384" height="486">
-          <p>Самая длинная палка для селфи доступна в нашем магазине.
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+            5 килограмм.</p>
           <p><a href="#">Подробнее</a></p>
           <input type="radio" checked>
           <input type="radio">
@@ -74,14 +57,10 @@
           </dl>
         </li>
         <li>
-          <h3>
-            Худеем
-            правильно!
-          </h3>
+          <h3>Худеем правильно!</h3>
           <span>02</span>
           <img src="img/fitness-tracker.png" alt="fitness tracker for you" width="345" height="485">
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <p><a href="#">Подробнее</a></p>
           <input type="radio">
           <input type="radio" checked>
@@ -92,15 +71,11 @@
           </dl>
         </li>
         <li>
-          <h3>
-            Порхает как бабочка,
-            жалит как пчела!
-          </h3>
+          <h3>Порхает как бабочка, жалит как пчела!</h3>
           <span>03</span>
           <img src="img/laser-drone.png" alt="fake camera laser drone" width="526" height="334">
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
-            мощным лазером, замаскированным под стандартную камеру.
-          </p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            камеру.</p>
           <p><a href="#">Подробнее</a></p>
           <input type="radio">
           <input type="radio">
@@ -167,9 +142,7 @@
       </ul>
     </section>
     <section>
-      <h2>
-        О нас
-      </h2>
+      <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
       <p> Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
         компаниями:</p>
@@ -185,17 +158,23 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
         бывает.</p>
-      <img src="img/map.jpg" alt="Map" width="560" height="222"><br>
+      <a href="map.html"><img src="img/map.jpg" alt="Map" width="560" height="222"><br></a>
       <button type="button">Закрыть</button>
-      <button type="button">Напишите нам</button>
+      <a href="#">Напишите нам</a>
 
       <form method="POST" action="https://echo.htmlacademy.ru">
-        <p><label for="feedback-name">Ваше имя</label><input id="feedback-name" type="text" name="name"
-            placeholder="Имя Фамилия"></p>
-        <p><label for="feedback-mail">Ваш e-mail</label><input id="feedback-mail" type="email" name="e-mail"
-            placeholder="example@mail.com"></p>
-        <p><label for="feedback-text">Текст письма</label><textarea id="feedback-text" name="text" rows="4"
-            placeholder="В свободной форме"></textarea></p>
+        <p>
+          <label for="feedback-name">Ваше имя</label>
+          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-mail">Ваш e-mail</label>
+          <input id="feedback-mail" type="email" name="e-mail" placeholder="example@mail.com">
+        </p>
+        <p>
+          <label for="feedback-text">Текст письма</label>
+          <textarea id="feedback-text" name="text" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
         <button type="submit">Отправить</button>
       </form>
 
@@ -206,16 +185,16 @@
     <a href="index.html"><img src="img/logo.png" alt="Device E-shop" width="163" height="35"></a>
     <ul>
       <li><a href="login.html">Войти</a></li>
-      <li><button type="button">Сравнить</button></li>
-      <li><button type="button">Корзина</button></li>
+      <li><a href="compare.html">Сравнить</a></li>
+      <li><a href="cart.html">Корзина</a></li>
     </ul>
-    <p>г. Москва, ул. Строителей, 15</p>
+    <address>г. Москва, ул. Строителей, 15</address>
     <ul>
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="guarantee.html">Гарантия</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <p>Тел.: +7 (495) 495-95-95</p>
+    <a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a>
     <div>
       <ul>
         <li><a href="#"></a></li>
@@ -225,6 +204,23 @@
       <span><a href="https://htmlacademy.ru"></a></span>
     </div>
   </footer>
+  <form method="post" action="https://echo.htmlacademy.ru" class="visually-hidden">
+    <p>
+      <label for="user-login">Логин</label>
+      <input id="user-login" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label for="user-password">Пароль</label>
+      <input id="user-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">
+        Запомните меня
+      </label>
+    </p>
+    <button type="submit">Войти</button>
+  </form>
 </body>
 
 </html>

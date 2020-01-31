@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,8 +14,8 @@
       <ul>
         <li><input type="text"></li>
         <li><a href="login.html">Войти</a></li>
-        <li><button type="button">Сравнить</button></li>
-        <li><button type="button">Корзина</button></li>
+        <li><a href="compare.html">Сравнить</a></li>
+        <li><a href="cart.html">Корзина</a></li>
       </ul>
       <ul>
         <li><a href="inner.html">Каталог товаров</a></li>
@@ -22,43 +23,25 @@
         <li><a href="guarantee.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      <section>
-        <ul>
-          <li>
-            Виртуальная реальность
-          </li>
-          <li>
-            Моноподы для селфи
-          </li>
-          <li>
-            Экшн-камеры
-          </li>
-          <li>
-            Фитнес-браслеты
-          </li>
-          <li>
-            Умные часы
-          </li>
-          <li>
-            Квадрокоптеры
-          </li>
-        </ul>
-        </div>
-      </section>
+      <ul>
+        <li>Виртуальная реальность</li>
+        <li>Моноподы для селфи</li>
+        <li>Экшн-камеры</li>
+        <li>Фитнес-браслеты</li>
+        <li>Умные часы</li>
+        <li>Квадрокоптеры</li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <h1>
-      Моноподы для селфи
-    </h1>
+    <h1>Моноподы для селфи</h1>
     <ul>
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
       <li><a href="inner.html">Моноподы для селфи</a></li>
     </ul>
     <section>
-      <h2>
-        Фильтр:
-      </h2>
+      <h2>Фильтр:</h2>
       <h3>стоимость</h3>
       <input type="range" min="0" max="5000">
       <form action="https://echo.htmlacademy.ru" method="GET">
@@ -66,23 +49,41 @@
 
           <legend>цвет</legend>
           <ul>
-            <li><input type="checkbox" name="black" id="color-black" value="black"><label
-                for="color-black">Черный</label></li>
-            <li><input type="checkbox" name="white" id="color-white" value="white"><label
-                for="color-white">Белый</label></li>
-            <li><input type="checkbox" name="blue" id="color-blue" value="blue"><label for="color-blue">Синий</label>
+            <li>
+              <input type="checkbox" name="black" id="color-black" value="black">
+              <label for="color-black">Черный</label>
             </li>
-            <li><input type="checkbox" name="red" id="color-red" value="red"><label for="color-red">Красный</label></li>
-            <li><input type="checkbox" name="pink" id="color-pink" value="pink"><label for="color-pink">Розовый</label>
+            <li>
+              <input type="checkbox" name="white" id="color-white" value="white">
+              <label for="color-white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="color-blue" value="blue">
+              <label for="color-blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="color-red" value="red">
+              <label for="color-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="color-pink" value="pink">
+              <label for="color-pink">Розовый</label>
             </li>
           </ul>
 
         </fieldset>
+
         <fieldset>
           <legend>bluetooth</legend>
           <ul>
-            <li><input type="radio" name="bluetooth" value="Yes" id="bluetooth-yes"><label for="bluetooth-yes">Есть</label></li>
-            <li><input type="radio" name="bluetooth" value="No" id="bluetooth-no"><label for="bluetooth-no">Нет</label></li>
+            <li>
+              <input type="radio" name="bluetooth" value="Yes" id="bluetooth-yes">
+              <label for="bluetooth-yes">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" value="No" id="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+            </li>
           </ul>
         </fieldset>
         <button type="submit">Показать</button>
@@ -104,26 +105,30 @@
       <ul>
         <li>
           <h3>Любительская селфи-палка</h3>
-          <a href="catalog-item.html"><img src="img/casual-selfie-stick.jpg" alt="Casual selfie stick" width="360"
-              height="380"></a>
+          <a href="catalog-item.html">
+            <img src="img/casual-selfie-stick.jpg" alt="Casual selfie stick" width="360" height="380">
+          </a>
           <button type="button">500</button>
         </li>
         <li>
           <h3>Профессиональная селфи-палка </h3>
-          <a href="catalog-item.html"><img src="img/pro-selfie-stick.jpg" alt="Professiaonal selfie stick" width="360"
-              height="380"></a>
+          <a href="catalog-item.html">
+            <img src="img/pro-selfie-stick.jpg" alt="Professiaonal selfie stick" width="360" height="380">
+          </a>
           <button type="button">1500</button>
         </li>
         <li>
           <h3>Непотопляемая селфи-палка</h3>
-          <a href="catalog-item.html"><img src="img/waterproof-selfie-stick.jpg" alt="Waterproof selfie stick"
-              width="360" height="380"></a>
+          <a href="catalog-item.html">
+            <img src="img/waterproof-selfie-stick.jpg" alt="Waterproof selfie stick" width="360" height="380">
+          </a>
           <button type="button">2500</button>
         </li>
         <li>
           <h3>Селфи-палка «Следуй за мной»</h3>
-          <a href="catalog-item.html"><img src="img/follow-me-selfie-stick.jpg" alt="'Follow me' selfie stick"
-              width="360" height="380"></a>
+          <a href="catalog-item.html">
+            <img src="img/follow-me-selfie-stick.jpg" alt="'Follow me' selfie stick" width="360" height="380">
+          </a>
           <button type="button">4900</button>
         </li>
       </ul>
@@ -145,16 +150,16 @@
     <a href="index.html"><img src="img/logo.png" alt="Device E-shop logo" width="163" height="35"></a>
     <ul>
       <li><a href="login.html">Войти</a></li>
-      <li><button type="button">Сравнить</button></li>
-      <li><button type="button">Корзина</button></li>
+      <li><a href="compare.html">Сравнить</a></li>
+      <li><a href="cart.html">Корзина</a></li>
     </ul>
-    <p>г. Москва, ул. Строителей, 15</p>
+    <address>г. Москва, ул. Строителей, 15</address>
     <ul>
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="guarantee.html">Гарантия</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <p>Тел.: +7 (495) 495-95-95</p>
+    <a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a>
     <div>
       <ul>
         <li><a href="#"></a></li>
@@ -164,6 +169,23 @@
       <span><a href="https://htmlacademy.ru"></a></span>
     </div>
   </footer>
+  <form method="post" action="https://echo.htmlacademy.ru" class="visually-hidden">
+    <p>
+      <label for="user-login">Логин</label>
+      <input id="user-login" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label for="user-password">Пароль</label>
+      <input id="user-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">
+        Запомните меня
+      </label>
+    </p>
+    <button type="submit">Войти</button>
+  </form>
 </body>
 
 </html>
