@@ -1,10 +1,258 @@
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
+    url("/fonts/gilroyextrabold.woff") format("woff"),
+    url("/fonts/gilroyextrabold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/gilroylight.woff2") format("woff2"),
+    url("/fonts/gilroylight.woff") format("woff"),
+    url("/fonts/gilroylight.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/opensans.woff2") format("woff2"),
+    url("/fonts/opensans.woff") format("woff"),
+    url("/fonts/opensans.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("/fonts/opensanslight.woff2") format("woff2"),
+    url("/fonts/opensanslight.woff") format("woff"),
+    url("/fonts/opensanslight.ttf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-align: left;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  color: #000000;
+  background-color: #f7e296;
+}
+
+.user-navigation,
+.site-infromtaion,
+.main-catalog,
+.main-catalog-navigation {
+  list-style: none;
+}
+
+.user-navigation,
+.main-catalog-navigation {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.main-catalog,
+.site-infromtaion {
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+}
+
+.main-catalog .main-catalog-navigation {
+  display: none;
+}
+
+.main-catalog:hover .main-catalog-navigation {
+  display: block;
+}
+
+
+.user-navigation a,
+.site-infromtaion a,
+.main-catalog a,
+.main-catalog-navigation a {
+  color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-infromtaion a:hover,
+.site-infromtaion a:focus,
+.main-catalog a:hover,
+.main-catalog a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.site-infromtaion a:active,
+.main-catalog a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-about-us h2,
+.main-contacts h2 {
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+.main-about-us p,
+.main-contacts p {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #464646;
+}
+
+.main-about-us a,
+.main-contacts a {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-about-us ul {
+  font-size: 16px;
+  line-height: 40px;
+  list-style: none;
+
+}
+
+.main-footer {
+  background-color: #464646;
+
+}
+
+.main-footer a:nth-of-type(2),
+address {
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+
+  color: #ffffff;
+
+}
+
+.footer-user-navigation,
+.footer-site-information {
+  list-style: none;
+}
+
+.footer-site-information a {
+  color: white;
+}
+
+.footer-site-information a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-information a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation a {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-navigation a:hover {
+  color: #ffffff;
+}
+
+.footer-user-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs ul {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "OpenSans-Light", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.aside-catalog-items-filter {
+  background-color: #ebebeb;
+}
+
+.aside-catalog-items-filter legend {
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+}
+
+.aside-catalog-items-filter ul {
+  list-style: none;
+}
+
+.aside-catalog-items-filter label {
+  font-family: "OpenSans-Light", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  text-align: left;
+}
+
+.catalog-items ul {
+  list-style: none;
+}
+
+.catalog-items h3 {
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog-items a:nth-of-type(2n) {
+  font-family: "Gilroy-Light", serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-align: right;
+  color: #464646;
+}
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
