@@ -1,29 +1,41 @@
 @font-face {
   font-family: "Gilroy-ExtraBold";
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
   src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-    url("/fonts/gilroyextrabold.woff") format("woff"),
-    url("/fonts/gilroyextrabold.ttf") format("opentype");
+    url("/fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy-Light";
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
   src: url("/fonts/gilroylight.woff2") format("woff2"),
-    url("/fonts/gilroylight.woff") format("woff"),
-    url("/fonts/gilroylight.ttf") format("opentype");
+    url("/fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "OpenSans";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
   src: url("/fonts/opensans.woff2") format("woff2"),
-    url("/fonts/opensans.woff") format("woff"),
-    url("/fonts/opensans.ttf") format("opentype");
+    url("/fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "OpenSans-Light";
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
   src: url("/fonts/opensanslight.woff2") format("woff2"),
-    url("/fonts/opensanslight.woff") format("woff"),
-    url("/fonts/opensanslight.ttf") format("opentype");
+    url("/fonts/opensanslight.woff") format("woff");
 }
 
 body {
@@ -33,7 +45,6 @@ body {
   font-family: "Gilroy-ExtraBold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800;
   letter-spacing: 3.6px;
   color: #000000;
   text-align: left;
@@ -63,7 +74,6 @@ a {
 .main-catalog-navigation {
   font-family: "OpenSans-Light", sans-serif;
   font-size: 15px;
-  font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
 }
@@ -106,19 +116,99 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-slider ul {
+  list-style: none;
+}
+
+.main-slider h3 {
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+}
+.main-slider span{
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 1.79px;
+  text-align:right;
+  color:#ffffff;
+}
+.main-slider p {
+  font-family: "OpenSans-Light", serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color:#464646;
+}
+.main-slider a{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#000000;
+}
+.main-slider dt {
+  font-family: "Gilroy-Light", serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+.main-slider dd {
+  font-family: "OpenSans-Light", serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #464646;
+}
+.popular-categories ul{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+
+  list-style: none;
+}
+.popular-categories a{
+  color:#000000;
+}
+
+.main-information-block label{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-information-block h3{
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+.main-information-block p {
+  font-family: "OpenSans-Light", serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+.main-information-block ul{
+  list-style: none;
+}
+.main-brands ul{
+list-style: none;
+}
+
 .main-about-us h2,
 .main-contacts h2 {
   font-size: 47px;
-  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
 }
 
 .main-about-us p,
-.main-contacts p {
+.main-contacts > p {
   font-family: "OpenSans-Light", sans-serif;
   font-size: 15px;
-  font-weight: 300;
   line-height: 30px;
   letter-spacing: normal;
   color: #464646;
@@ -133,8 +223,36 @@ a {
 .main-about-us ul {
   font-size: 16px;
   line-height: 40px;
+  letter-spacing: normal;
   list-style: none;
 
+}
+
+.feedback-form label{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder{
+  font-family: "OpenSans-Light", serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: rgba(70, 70, 70, 0.4);
+}
+.feedback-form button {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: 0;
+  border: 0;
 }
 
 .main-footer {
@@ -146,7 +264,6 @@ a {
 address {
   font-family: "OpenSans-Light";
   font-size: 15px;
-  font-weight: 300;
   font-style: normal;
   line-height: 30px;
   letter-spacing: normal;
@@ -175,7 +292,6 @@ address {
 .footer-user-navigation a {
   font-family: "OpenSans-Light", sans-serif;
   font-size: 15px;
-  font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
   color: rgba(255, 255, 255, 0.7);
@@ -189,6 +305,20 @@ address {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.catalog-page h2,
+.catalog-page-switcher a{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.catalog-page legend,
+.catalog-page h3 {
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+}
+
 .breadcrumbs ul {
   list-style: none;
 }
@@ -196,20 +326,16 @@ address {
 .breadcrumbs a {
   font-family: "OpenSans-Light", serif;
   font-size: 14px;
-  font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.14px;
 
   color: rgba(0, 0, 0, 0.3);
 }
 
-.aside-catalog-items-filter {
+.aside-catalog-items-filter, 
+.catalog-items-sorting, 
+.catalog-page-switcher {
   background-color: #ebebeb;
-}
-
-.aside-catalog-items-filter legend {
-  letter-spacing: 0.18px;
-  text-transform: capitalize;
 }
 
 .aside-catalog-items-filter ul {
@@ -219,31 +345,83 @@ address {
 .aside-catalog-items-filter label {
   font-family: "OpenSans-Light", serif;
   font-size: 14px;
-  font-weight: 300;
   line-height: 40px;
   letter-spacing: 0.14px;
   text-align: left;
+}
+.aside-catalog-items-filter button{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: 0;
+  border: 0;
+}
+
+.catalog-items-sorting ul {
+  list-style: none;
+}
+
+.types-of-sorting a, 
+.arrows-sorting a{
+  color:black;
+}
+.types-of-sorting a{
+  font-family: "OpenSans";
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.types-of-sorting a:active{
+  color:#000000;
 }
 
 .catalog-items ul {
   list-style: none;
 }
 
-.catalog-items h3 {
-  letter-spacing: 0.18px;
-  color: #000000;
-}
 
 .catalog-items a:nth-of-type(2n) {
   font-family: "Gilroy-Light", serif;
   font-size: 16px;
-  font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 24px;
   letter-spacing: 0.16px;
   text-align: right;
   color: #464646;
+}
+
+.catalog-page-switcher ul{
+  list-style: none;
+}
+.catalog-page-switcher a{
+  color: #000000;
+}
+.catalog-items-button {
+  background-color: rgba(238, 238, 238, 0.7);;
+}
+.catalog-items-button a:first-of-type{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-align: center;
+  color:#000000;
+  
+}
+.catalog-items-button a:last-of-type{
+  font-family: "OpenSans-Light";
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  
 }
 
 .visually-hidden {
