@@ -48,10 +48,6 @@ body {
   letter-spacing: 3.6px;
   color: #000000;
   text-align: left;
-
-  background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
@@ -251,7 +247,7 @@ list-style: none;
   text-transform: uppercase;
   text-align: center;
 
-  background: 0;
+  background-color: transparent;
   border: 0;
 }
 
@@ -356,7 +352,7 @@ address {
   text-transform: uppercase;
   text-align: center;
 
-  background: 0;
+  background-color: transparent;
   border: 0;
 }
 
@@ -422,6 +418,16 @@ address {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   
+}
+.button {
+  box-sizing: border-box;
+  padding: 8px 35px;
+  background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+}
+
+
+.button:hover{
+  background-image: linear-gradient(to bottom, transparent 20%, #f0c52e 20%, #f0c52e 80%, transparent 80%);
 }
 
 .visually-hidden {
