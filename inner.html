@@ -11,19 +11,26 @@
 <body>
   <header class="main-header container">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="Device E-Shop logo" width="163"
+      <a class="main-header-logo" href="index.html"><img src="img/logo-header.png" alt="Device E-Shop logo" width="163"
           height="35"></a>
 
       <div class="main-header-wrapper">
         <ul class="user-navigation">
-          <li><input type="text"></li>
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="compare.html">Сравнить</a></li>
-          <li><a href="cart.html">Корзина</a></li>
+          <li>
+            <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+              <input type="text" class="main-header-search" name="search-input" id="search-form-input"
+                placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">Найти</button>
+            </form>
+          </li>
+          <li><a href="login.html" class="nav-links nav-login">Войти</a></li>
+          <li><a href="compare.html" class="nav-links nav-compare">Сравнить</a></li>
+          <li><a href="cart.html" class="nav-links nav-cart">Корзина</a></li>
         </ul>
 
         <ul class="site-infromtaion">
-          <li><a href="inner.html">Каталог товаров</a>
+          <li class="catalog-items"><a href="inner.html">Каталог товаров</a>
             <ul class="main-catalog-navigation">
               <li>Виртуальная реальность</li>
               <li><a href="inner.html">Моноподы для селфи</a></li>
@@ -55,39 +62,39 @@
       <div class="catalog-items-sorting">
         <h2>Фильтр:</h2>
         <h2>Сортировка</h2>
-        
-          <ul class="types-of-sorting">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По популярности</a></li>
-          </ul>
-          <ul class="arrows-sorting">
-            <li>
-              <a href="#"><span class="visually-hidden">Сортировка, от меньшего к большему</span></a>
-            </li>
-            <li>
-              <a href="#"><span class="visually-hidden">Сортировка, от большего к меньшему</span></a>
-            </li>
-          </ul>
-       
+
+        <ul class="types-of-sorting">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <ul class="arrows-sorting">
+          <li>
+            <a href="#"><span class="visually-hidden">Сортировка, от меньшего к большему</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="visually-hidden">Сортировка, от большего к меньшему</span></a>
+          </li>
+        </ul>
+
       </div>
 
-<div class="catalog-wrapper">
-  
+      <div class="catalog-wrapper">
+
         <aside class="aside-catalog-items-filter">
-          
-  
+
+
           <form action="https://echo.htmlacademy.ru" method="GET">
-  
+
             <fieldset>
-  
+
               <legend>стоимость</legend>
               <input type="range" min="0" max="5000">
-  
+
             </fieldset>
-  
+
             <fieldset>
-  
+
               <legend>цвет</legend>
               <ul>
                 <li>
@@ -111,9 +118,9 @@
                   <label for="color-pink">Розовый</label>
                 </li>
               </ul>
-  
+
             </fieldset>
-  
+
             <fieldset>
               <legend>bluetooth</legend>
               <ul>
@@ -130,8 +137,8 @@
             <button type="submit" class="button">Показать</button>
           </form>
         </aside>
-  
-       
+
+
         <div class="catalog-items-wrapper">
           <ul class="catalog-items">
             <li>
@@ -164,17 +171,17 @@
             </li>
           </ul>
 
-            <ul class="catalog-page-switcher">
-              <li><a href="#">Назад</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Вперед</a></li>
-            </ul>
+          <ul class="catalog-page-switcher">
+            <li><a href="#">Назад</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Вперед</a></li>
+          </ul>
         </div>
-  
-        
-</div>
+
+
+      </div>
 
 
       <div class="catalog-items-button">
@@ -186,12 +193,12 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-user-menu">
-        <a href="index.html" class="main-footer-logo"><img src="img/logo.png" alt="Device E-shop" width="163"
+        <a href="index.html" class="main-footer-logo"><img src="img/logo-footer.png" alt="Device E-shop" width="163"
             height="35"></a>
         <ul class="footer-user-navigation">
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="compare.html">Сравнить</a></li>
-          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="login.html" class="footer-login"> Войти</a></li>
+          <li><a href="compare.html" class="footer-compare">Сравнить</a></li>
+          <li><a href="cart.html" class="footer-cart">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-about-us">
@@ -204,12 +211,20 @@
         <a href="tel:+7(495)495-95-95" class="footer-tel">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-socials">
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+        <div class="footer-decoration-line"></div>
+        <ul class="socials-buttons-list">
+          <li><a href="#" class="socials-button"><img src="img/facebook.svg"></a></li>
+          <li><a href="#" class="socials-button"><img src="img/instagram.svg"></a></li>
+          <li><a href="#" class="socials-button"><img src="img/twitter.svg"></a></li>
         </ul>
-        <span><a href="https://htmlacademy.ru"></a></span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo"
+          title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"
+            fill="#ffc600">
+            <path
+              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
