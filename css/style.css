@@ -884,42 +884,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.brand a {
-  position: relative;
-  display: block;
-  width: 260px;
-  height: 100px;
+.brand img{
+  filter: grayscale();
+  opacity: 0.2;
 }
 
-.brand a:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 100px;
-  z-index: 1;
+.brand img:hover {
+  filter: none;
+  opacity: unset;
 }
 
-.brand a img:hover {
-  opacity: 0;
-}
-
-.brand-1:hover::before {
-  background-image: url("../img/dji.png");
-}
-
-.brand-2:hover::before {
-  background-image: url("../img/spgadgets.png");
-}
-
-.brand-3:hover::before {
-  background-image: url("../img/gopro.png");
-}
-
-.brand-4:hover::before {
-  background-image: url("../img/vive.png");
-}
 
 .brands {
   margin-bottom: 107px;
@@ -1010,17 +984,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.footer-logo p,
-.footer-logo a {
+.footer-logo {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
   color: #ffc600;
+  letter-spacing: 0.01em;
+  
 }
 
-.footer-logo a:hover,
-.footer-logo a:focus {
+.footer-logo:hover,
+.footer-logo:focus {
   color: rgba(255, 198, 0, 0.6);
 }
 
-.footer-logo a:active {
+.footer-logo:active {
   color: rgba(255, 198, 0, 0.3);
 }
 
@@ -1125,19 +1105,16 @@ a.footer-login::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.social-button {
-  color: #ffffff;
-}
 
-.social-button img {
+.social-button svg {
   opacity: 0.3;
 }
 
-.social-button img:hover {
+.social-button svg:hover {
   opacity: 0.6;
 }
 
-.social-button img:active {
+.social-button svg:active {
   opacity: 0.1;
 }
 
@@ -2036,11 +2013,11 @@ a.footer-login::before {
   display: flex;
 }
 
-.footer-menu {
-  margin: 0 auto;
-}
+/* {
+  margin:0 auto;
+} */
 
-.footer-menu-list {
+ul.footer-menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2049,6 +2026,7 @@ a.footer-login::before {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer-address {
@@ -2065,7 +2043,7 @@ a.footer-login::before {
   margin: 0 auto;
 }
 
-.footer-social ul {
+ul.social-button-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2073,6 +2051,8 @@ a.footer-login::before {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 140px;
+
+  margin: 0 auto;
 }
 
 .footer-decoration-line {

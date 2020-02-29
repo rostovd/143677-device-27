@@ -1,3 +1,4 @@
+if (document.querySelector(".modal")) {
 let linkForm = document.querySelector(".write-us-link");
 let popupForm = document.querySelector(".modal-write-us");
 let closeForm = popupForm.querySelector(".modal-close");
@@ -81,7 +82,7 @@ closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show");
 });
-
+}
 let sliders = document.querySelectorAll(".slider-item");
 if (sliders.length !== 0) {
   let slidersNav = document.querySelector(".slider-nav");
@@ -95,8 +96,8 @@ if (sliders.length !== 0) {
     if (target.classList.contains("slider-checkbox")) {
       document.querySelector(".slider-nav").remove();
       let slideNum = target.id.split('-')[1];
-      for (let j = 0; j < sliders.length; j++) {
-        sliders[j].classList.remove("slider-show");
+      for (let i = 0; i < sliders.length; i++) {
+        sliders[i].classList.remove("slider-show");
       }
       sliders[slideNum - 1].classList.add("slider-show");
       activeSlider = sliders[slideNum - 1];
@@ -107,7 +108,7 @@ if (sliders.length !== 0) {
   });
 }
 let services = document.querySelectorAll(".services-description > div");
-if (services.length !== 0) {
+if (services.length) {
   let servicesNav = document.querySelector(".services-nav");
   let servicesTab = document.querySelectorAll(".services-tab");
 
@@ -116,9 +117,9 @@ if (services.length !== 0) {
     let target = evt.target;
     if (target.classList.contains("services-link")) {
       let parentLi = target.parentElement;
-      for (let j = 0; j < services.length; j++) {
-        services[j].classList.remove("service-show");
-        servicesTab[j].classList.remove("current");
+      for (let i = 0; i < services.length; i++) {
+        services[i].classList.remove("service-show");
+        servicesTab[i].classList.remove("current");
       }
       let serviceDescriptionSelector = ".services-description-" + target.id.split('-')[0];
       let serviceDescriptionBlock = document.querySelector(serviceDescriptionSelector);
@@ -127,7 +128,6 @@ if (services.length !== 0) {
     }
   });
 }
-
 let line = document.querySelector(".price-controls");
 if (line) {
   let bar = document.querySelector(".bar");
